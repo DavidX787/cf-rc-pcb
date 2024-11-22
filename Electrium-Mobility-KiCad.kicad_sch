@@ -6,76 +6,45 @@
 	(paper "A4")
 	(lib_symbols
 		(symbol "2024-11-20_13-12-45:TPB4056A20-ES1R"
-			(pin_names
-				(offset 0.254)
-			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 20.32 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "TPB4056A20-ES1R"
-				(at 20.32 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "ESOP-8_TPK"
-				(at 0 0 0)
+			(property "Reference" "U3"
+				(at 17.78 -2.032 90)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
+					)
+				)
+			)
+			(property "Value" "AH8501-FDC-7 HES1"
+				(at 15.494 -11.684 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Library:6-UDFN"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "TPB4056A20-ES1R"
-				(at 0 0 0)
+			(property "Datasheet" ""
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
 			)
 			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "TPB4056A20-ES1R"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "ESOP-8_TPK ESOP-8_TPK-M ESOP-8_TPK-L"
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -84,58 +53,47 @@
 				)
 			)
 			(symbol "TPB4056A20-ES1R_0_1"
-				(polyline
-					(pts
-						(xy 7.62 -15.24) (xy 33.02 -15.24)
-					)
+				(rectangle
+					(start 13.97 -20.32)
+					(end -12.7 -2.54)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type color)
+						(color 0 0 0 0)
 					)
 				)
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -15.24)
-					)
+			)
+			(symbol "TPB4056A20-ES1R_1_1"
+				(rectangle
+					(start -3.81 -29.21)
+					(end -3.81 -29.21)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type color)
+						(color 221 243 255 1)
 					)
 				)
-				(polyline
-					(pts
-						(xy 33.02 -15.24) (xy 33.02 5.08)
-					)
+				(rectangle
+					(start 13.97 -20.32)
+					(end -12.7 -2.54)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy 33.02 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 0 0)
-					(length 7.62)
-					(name "VIN"
+				(pin output line
+					(at -7.62 -25.4 90)
+					(length 5.08)
+					(name "OUTPUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -150,10 +108,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "*PPR"
+				(pin no_connect line
+					(at 0 -25.4 90)
+					(length 5.08)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -168,10 +126,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 0 -5.08 0)
-					(length 7.62)
-					(name "*CHG"
+				(pin power_in line
+					(at 8.89 -25.4 90)
+					(length 5.08)
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -187,9 +145,9 @@
 					)
 				)
 				(pin input line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "*EN"
+					(at 8.89 2.54 270)
+					(length 5.08)
+					(name "Enable"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -204,9 +162,9 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 40.64 -10.16 180)
-					(length 7.62)
+				(pin power_in line
+					(at 0 2.54 270)
+					(length 5.08)
 					(name "GND"
 						(effects
 							(font
@@ -223,9 +181,9 @@
 					)
 				)
 				(pin input line
-					(at 40.64 -7.62 180)
-					(length 7.62)
-					(name "IMIN"
+					(at -7.62 2.54 270)
+					(length 5.08)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -233,60 +191,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 40.64 -5.08 180)
-					(length 7.62)
-					(name "IREF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 40.64 -2.54 180)
-					(length 7.62)
-					(name "BAT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 40.64 0 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1494,6 +1398,187 @@
 				)
 			)
 		)
+		(symbol "Library:AH8501-FDC-7"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U4"
+				(at 19.05 -15.875 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AH8501-FDC-7 HES1"
+				(at 16.51 -15.875 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Library:6-UDFN"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AH8501-FDC-7_1_1"
+				(rectangle
+					(start -12.7 -2.54)
+					(end 13.97 -20.32)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -3.81 -29.21)
+					(end -3.81 -29.21)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 221 243 255 1)
+					)
+				)
+				(pin output line
+					(at -7.62 -25.4 90)
+					(length 5.08)
+					(name "OUTPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -25.4 90)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 8.89 -25.4 90)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 2.54 270)
+					(length 5.08)
+					(name "Enable"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 2.54 270)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 270)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Motor:Motor_DC"
 			(pin_names
 				(offset 0)
@@ -2454,201 +2539,6 @@
 						)
 					)
 					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Sensor_Magnetic:AH8501-FDC-7"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "AH8501-FDC-7 HES"
-				(at -14.986 -10.668 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AH8501-FDC-7_0_1"
-				(rectangle
-					(start 13.97 -20.32)
-					(end -12.7 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type color)
-						(color 0 0 0 0)
-					)
-				)
-			)
-			(symbol "AH8501-FDC-7_1_1"
-				(rectangle
-					(start -3.81 -29.21)
-					(end -3.81 -29.21)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type color)
-						(color 221 243 255 1)
-					)
-				)
-				(rectangle
-					(start 13.97 -20.32)
-					(end -12.7 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin output line
-					(at -7.62 -25.4 90)
-					(length 5.08)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 0 -25.4 90)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 8.89 -25.4 90)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 8.89 2.54 270)
-					(length 5.08)
-					(name "Enable"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 2.54 270)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 270)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5183,85 +5073,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Magnetic:AH8501-FDC-7")
-		(at 189.23 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "22a70d31-0a4a-4cef-9983-595b53ed2853")
-		(property "Reference" "AH8501-FDC-7 HES1"
-			(at 200.66 123.952 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 205.105 124.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 186.69 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d94a54f9-dba9-4782-855e-6665597598bd")
-		)
-		(pin "6"
-			(uuid "3614adb5-efdd-449b-9466-47e927556b94")
-		)
-		(pin "2"
-			(uuid "9a64046d-1430-47dc-a03d-8a156c8b4b2d")
-		)
-		(pin "3"
-			(uuid "b566ea11-c5ae-4882-ad65-216643c7a5ee")
-		)
-		(pin "4"
-			(uuid "ca571f08-faa7-40d5-a96e-63103e6f3086")
-		)
-		(pin "5"
-			(uuid "ee17829a-2e7a-4afb-a103-d9776e95e930")
-		)
-		(instances
-			(project ""
-				(path "/77cfd6b1-cf11-45d1-96c8-b00f1af024ba"
-					(reference "AH8501-FDC-7 HES1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 16.51 81.28 0)
 		(unit 1)
@@ -5394,6 +5205,86 @@
 			(project ""
 				(path "/77cfd6b1-cf11-45d1-96c8-b00f1af024ba"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Library:AH8501-FDC-7")
+		(at 189.23 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b7cb1a7-771a-471c-9594-ab0f9b9c1be1")
+		(property "Reference" "U4"
+			(at 205.105 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AH8501-FDC-7 HES1"
+			(at 205.105 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:6-UDFN"
+			(at 186.69 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.69 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "9d782dbd-8849-4af7-8ef8-9b331c9b4808")
+		)
+		(pin "3"
+			(uuid "531a82db-8f76-4d21-b5e9-8d6e309ac2ff")
+		)
+		(pin "5"
+			(uuid "cf594dab-2954-41f8-a381-36ece8c0e5cf")
+		)
+		(pin "2"
+			(uuid "44639f95-33e9-4949-b103-54918852edf7")
+		)
+		(pin "6"
+			(uuid "fdb3d78a-2080-4bf5-8769-09e04ae31a71")
+		)
+		(pin "1"
+			(uuid "f0b21b5d-f7be-4c9d-b615-4e4104184f1e")
+		)
+		(instances
+			(project ""
+				(path "/77cfd6b1-cf11-45d1-96c8-b00f1af024ba"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -7079,43 +6970,41 @@
 		(fields_autoplaced yes)
 		(uuid "f74749f3-08cc-40d0-942d-8fc3d6b4d613")
 		(property "Reference" "U3"
-			(at 52.07 88.9 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "TPB4056A20-ES1R"
-			(at 52.07 91.44 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "ESOP-8_TPK"
-			(at 31.75 99.06 0)
+			(at 49.53 101.092 90)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
+				)
+			)
+		)
+		(property "Value" "AH8501-FDC-7 HES1"
+			(at 47.244 110.744 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:6-UDFN"
+			(at 31.75 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "TPB4056A20-ES1R"
-			(at 31.75 99.06 0)
+		(property "Datasheet" ""
+			(at 31.75 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 31.75 99.06 0)
+			(at 31.75 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7129,12 +7018,6 @@
 		(pin "6"
 			(uuid "258a5960-4d2c-426e-a642-2592253e7739")
 		)
-		(pin "7"
-			(uuid "26cfc88e-9449-49da-83a6-4fd8c24cbb04")
-		)
-		(pin "8"
-			(uuid "38269e41-a67f-4bc9-982f-b93787c98996")
-		)
 		(pin "2"
 			(uuid "b5215d99-d85e-4744-954d-bdcc22e4005f")
 		)
@@ -7143,9 +7026,6 @@
 		)
 		(pin "1"
 			(uuid "9d1b6566-f41a-4038-80df-607ec509a410")
-		)
-		(pin "9"
-			(uuid "049c1a9e-a46d-4c8e-b441-d1e22abad6d5")
 		)
 		(pin "3"
 			(uuid "dc49a38e-b75e-43d5-928a-f0b8572d0c74")
